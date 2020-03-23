@@ -1,0 +1,47 @@
+<div class="nc-form">
+  <div class="nc-form__header">
+    <span class="nc-form__header-mail">
+      <a href="#" class="nc-link nc-link_form">
+        <i class="nc-sprite-icon nc-sprite-icon_form-mail"></i>
+        <span class="nc-form__header-text">{{header}}</span>
+      </a>
+    </span>
+    <span class="nc-form__header-other">
+      <a href="#" class="nc-link nc-link_form">
+        <i class="nc-sprite-icon nc-sprite-icon_form-cloud"></i>
+      </a>
+      <a href="#" class="nc-link nc-link_form">
+        <i class="nc-sprite-icon nc-sprite-icon_form-calendar"></i>
+      </a>
+    </span>
+  </div>
+  <form name="login" method="post" class="nc-form__main">
+    <div class="nc-form__main-login">
+      <input title="login" type="text" class="nc-form__input"/>
+      <select title="select" class="nc-select nc-select_domain">
+        <option *ngFor="let item of options" value="mail" class="nc-select_option">{{item}}</option>
+      </select>
+    </div>
+    <div class="nc-form__main-password">
+      <input title="password" type="password" class="nc-form__input"/>
+      <button class="nc-button nc-button_login">{{enter}}</button>
+    </div>
+    <div class="nc-form__main-recover">
+      <span class="nc-form__main-recover-check">
+        <a href="#" class="nc-link">{{recover.forgotten}}</a>
+      </span>
+      <span class="nc-form__main-remember">
+        <input title="check-remember" type="checkbox" class="nc-form__remember-check" checked>
+        <span class="nc-form__remember-text">{{recover.remember}}</span>
+      </span>
+    </div>
+  </form>
+  <div class="nc-form__footer">
+    <span class="nc-form__footer-link-reg">
+      <a href="#" class="nc-link nc-link_form-reg">{{footer.register}}</a>
+    </span>
+    <span class="nc-form__footer-link-mobile">
+      <a href="#" class="nc-link nc-link_text-underemphasize">{{footer.mobile}}</a>
+    </span>
+  </div>
+</div>

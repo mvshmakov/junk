@@ -1,0 +1,10 @@
+<h3 class="widget__header">
+  <a href="#" class="widget__link_header">{{header.name}}</a>
+</h3>
+<ul class="widget__content">
+  <li *ngFor="let item of body.items; let i = index" class="widget__list-item">
+    <a href="#" class="widget__link">{{item}}</a>
+    <span> — </span>
+    <span class="widget__text">{{body.descriptions[i]}}</span>
+  </li>
+</ul>

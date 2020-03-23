@@ -1,0 +1,15 @@
+<div class="header_wrapper">
+  <div class="header__location">
+    <a href="#" class="header__link_location">{{location}}</a>
+  </div>
+  <div class="header__account">
+    <span *ngFor="let item of account" class="header__item">
+      <a href="#" class="header__link">{{item}}</a>
+    </span>
+    <span class="header__icon-wrapper">
+      <a href="#" class="header__link">
+        <img src="{{icon}}" alt="account" class="header__icon">
+      </a>
+    </span>
+  </div>
+</div>

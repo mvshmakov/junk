@@ -1,0 +1,28 @@
+<!--<ul *ngFor="let currentList of footerBlocks; let i = index">
+  <li *ngFor="let item of footerBlocks[i]">
+    <a href="#">{{item}}</a>
+  </li>
+</ul>-->
+
+<div class="footer__wrapper">
+  <ul class="footer__block">
+    <li *ngFor="let item of footerBlocks.first" class="footer__item">
+      <a href="#" class="footer__link">{{item}}</a>
+    </li>
+  </ul>
+  <ul class="footer__block">
+    <li *ngFor="let item of footerBlocks.second" class="footer__item">
+      <a href="65" class="footer__link">{{item}}</a>
+    </li>
+  </ul>
+  <ul class="footer__block">
+    <li *ngFor="let item of footerBlocks.third" class="footer__item">
+      <a href="#" class="footer__link">{{item}}</a>
+    </li>
+  </ul>
+  <ul class="footer__block">
+    <li *ngFor="let item of footerBlocks.fourth" class="footer__item">
+      <a href="#" class="footer__link">{{item}}</a>
+    </li>
+  </ul>
+</div>

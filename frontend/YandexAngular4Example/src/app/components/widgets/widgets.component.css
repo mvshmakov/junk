@@ -1,0 +1,11 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 900px;
+}
+
+.widget {
+  width: 30.33333%;
+  margin-right: 1%;
+}

@@ -1,0 +1,34 @@
+@import "../../styles/css/nc-link.css";
+
+ul, li {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.nc-widget-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.nc-widget-main__menu {
+   display: flex;
+   padding: 0 0 10px 0;
+ }
+
+.nc-widget-main__header {
+  display: flex;
+}
+
+.nc-widget-main__header-img {
+   width: 112px;
+   height: 63px;
+ }
+
+.nc-widget-main__header-text {
+   padding: 0 0 0 10px;
+ }
+
+.nc-widget-main__subtitles-item {
+   padding-bottom: 3px;
+ }

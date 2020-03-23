@@ -1,0 +1,30 @@
+.nc-link {
+  text-decoration: none;
+}
+
+.nc-link_text-header {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.nc-link_text-underemphasize {
+  font-size: 100%;
+  color: #999;
+}
+
+.nc-link_footer {
+  color: #999;
+}
+
+.nc-link_form-reg {
+  font-size: 18px;
+}
+
+.nc-link_text-link {
+  color: black;
+}
+
+.nc-link:hover {
+  color: #f26d00;
+  transition: color .1s ease-out;
+}

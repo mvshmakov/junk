@@ -1,0 +1,4 @@
+﻿  ConsoleApplication12.cpp
+  AssemblyInfo.obj : /DEBUG:FASTLINK не поддерживается, если присутствует управляемый код; выполняется перезапуск компоновки с /DEBUG:FULL
+  ConsoleApplication12.vcxproj -> c:\users\макс\documents\visual studio 2015\Projects\ConsoleApplication12\Debug\ConsoleApplication12.exe
+  ConsoleApplication12.vcxproj -> c:\users\макс\documents\visual studio 2015\Projects\ConsoleApplication12\Debug\ConsoleApplication12.pdb (Partial PDB)

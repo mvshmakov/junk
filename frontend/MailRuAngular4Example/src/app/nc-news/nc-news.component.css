@@ -1,0 +1,10 @@
+.nc-news {
+  display: flex;
+  flex: 6;
+}
+
+.nc-news-content {
+   display: flex;
+   flex-direction: column;
+   flex: 2;
+}

@@ -1,0 +1,10 @@
+{
+ "name": "Relationships",
+ "type": "Category",
+ "email": "hackathon_data1@mail.ru",
+ "children": [
+  {"name": "header1", "type": "Mail", "email": "hackathon_data1@mail.ru", "size": 3938},
+  {"name": "header2", "type": "Mail", "email": "hackathon_data1@mail.ru", "size": 3812},
+  {"name": "header3", "type": "Mail", "email": "hackathon_data1@mail.ru", "size": 6714}
+ ]
+}

@@ -1,0 +1,43 @@
+.news__content {
+  margin-left: -40px;
+}
+
+.news__body-item {
+  padding-bottom: 5px;
+}
+
+.news__footer {
+  margin-bottom: 10px;
+}
+
+.news__link {
+  color: #000;
+  text-decoration: none;
+}
+
+.news__link:hover {
+  color: red;
+}
+
+.news__link-text {
+  color: gray;
+}
+
+.news__link_header {
+  font-size: large;
+  color: #0054b9;
+  text-decoration: none;
+}
+
+.news__link_header:hover {
+  color: red;
+}
+
+.news__link_time {
+  color: gray;
+  text-decoration: none;
+}
+
+.news__link_time:hover {
+  color: red;
+}

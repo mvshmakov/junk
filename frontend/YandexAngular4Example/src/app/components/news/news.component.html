@@ -1,0 +1,18 @@
+<header class="news__header">
+  <span *ngFor="let singleHeader of header.headers" class="news__header-item">
+    <a href="#" class="news__link_header">{{singleHeader}}</a>
+  </span>
+  <span class="news__link-text">{{header.date}}</span>
+  <span class="news__link-text"><a href="#" class="news__link_time">{{header.time}}</a></span>
+</header>
+<ol class="news__content">
+  <li *ngFor="let item of body" class="news__body-item">
+    <a href="#" class="news__link">{{item}}</a>
+  </li>
+</ol>
+<footer class="news__footer">
+  <span *ngFor="let currency of footer.currency; let i = index" class="news__footer-item">
+    <a href="#" class="news__link"><b>{{currency}}</b></a>
+    {{footer.value[i]}}
+  </span>
+</footer>

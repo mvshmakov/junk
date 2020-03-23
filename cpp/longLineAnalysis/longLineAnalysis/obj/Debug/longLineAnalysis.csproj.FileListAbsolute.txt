@@ -1,0 +1,9 @@
+c:\users\макс\documents\visual studio 2015\Projects\longLineAnalysis\longLineAnalysis\bin\Debug\longLineAnalysis.exe.config
+c:\users\макс\documents\visual studio 2015\Projects\longLineAnalysis\longLineAnalysis\bin\Debug\longLineAnalysis.exe
+c:\users\макс\documents\visual studio 2015\Projects\longLineAnalysis\longLineAnalysis\bin\Debug\longLineAnalysis.pdb
+c:\users\макс\documents\visual studio 2015\Projects\longLineAnalysis\longLineAnalysis\obj\Debug\longLineAnalysis.csprojResolveAssemblyReference.cache
+c:\users\макс\documents\visual studio 2015\Projects\longLineAnalysis\longLineAnalysis\obj\Debug\longLineAnalysis.Form1.resources
+c:\users\макс\documents\visual studio 2015\Projects\longLineAnalysis\longLineAnalysis\obj\Debug\longLineAnalysis.Properties.Resources.resources
+c:\users\макс\documents\visual studio 2015\Projects\longLineAnalysis\longLineAnalysis\obj\Debug\longLineAnalysis.csproj.GenerateResource.Cache
+c:\users\макс\documents\visual studio 2015\Projects\longLineAnalysis\longLineAnalysis\obj\Debug\longLineAnalysis.exe
+c:\users\макс\documents\visual studio 2015\Projects\longLineAnalysis\longLineAnalysis\obj\Debug\longLineAnalysis.pdb

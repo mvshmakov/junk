@@ -1,0 +1,4 @@
+﻿  Practice1.cpp
+  AssemblyInfo.obj : /DEBUG:FASTLINK не поддерживается, если присутствует управляемый код; выполняется перезапуск компоновки с /DEBUG:FULL
+  Practice1.vcxproj -> c:\users\макс\documents\visual studio 2015\Projects\Practice1\Debug\Practice1.exe
+  Practice1.vcxproj -> c:\users\макс\documents\visual studio 2015\Projects\Practice1\Debug\Practice1.pdb (Partial PDB)

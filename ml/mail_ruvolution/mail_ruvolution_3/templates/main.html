@@ -1,0 +1,131 @@
+{% extends "layout.html" %}
+
+{% block title %}
+<div class="labelName">The graph of Mail<span class="colorText">.ruvolution</span></div>
+{% endblock title %}
+
+{% block right %}
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+
+<div class="navbar-nav mr-auto"></div>
+
+<div class="navbar-nav">
+    <!-- <div class="rightSearch">Поиск</div> -->
+    <input autofocus id="autocomplete" title="login" type="text" placeholder="Поиск по графу"/>
+    <input id="searchButton" value="Поиск" type="button" name="searchButton">
+</div>
+{% endblock right %}
+
+{% block content %}
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="containerForm">
+		<form>
+      <div class="EmailTheme">
+			 <span id="subject"></span>
+      </div>
+      <hr style="width: 95%; color: #ffffff;">
+			<div class="dws-input">
+				<span id="target" class="EmailAdress"></span>
+                <span id="date" class="EmailDate"></span>
+                <span id="spam-index" class="EmailDate"></span>
+			</div>
+      <hr style="width: 95%; color: #ffffff;">
+      <div class="EmailContent">
+        <span id="text"></span>
+      </div>
+      <hr style="width: 95%; color: #ffffff;">
+      <div class="response">
+      <button type="button" class="dws-submit-right" onclick="changeTemplate()">Ответить</button>
+      </div>
+      <hr style="width: 95%; color: #ffffff;">
+		</form>
+  </div>
+</div>
+
+<div id="responseSideNav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeResponseSideNav()">&times;</a>
+  <div class="containerForm">
+    <form>
+      <div class="EmailTheme">
+       <input id="subjectResponse" type="text" class="newEmailContent" name="subjectResponse" placeholder="Тема сообщения">
+      </div>
+      <hr style="width: 95%; color: #ffffff;">
+      <div class="dws-input">
+        <span id="targetResponse" class="EmailAdress"></span>
+        <span id="targetDate" class="EmailDate"></span>
+      </div>
+      <hr style="width: 95%; color: #ffffff;">
+      <div class="EmailContent">
+        <p><textarea id="textResponse" type="text" class="newEmailContent" name="textResponse" style="width: 465px; min-height: 70px;"></textarea></p>
+      </div>
+      <hr style="width: 95%; color: #ffffff;">
+      <div class="response">
+      <button class="dws-submit-right">Отправить</button>
+      </div>
+      <hr style="width: 95%; color: #ffffff;">
+    </form>
+  </div>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "600px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+function changeTemplate() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("responseSideNav").style.width = "600px";
+}
+
+function closeResponseSideNav() {
+  document.getElementById("responseSideNav").style.width = "0";
+}
+</script>
+
+	<main id="main" class="container page-main text-center"></main>
+
+	<!--third-party libs-->
+	<script src="{{ url_for('static', filename='scripts/libs/d3.min.js') }}"></script>
+	<!--internal js-->
+    <script src="{{ url_for('static', filename='scripts/spam-index-api.js') }}"></script>
+	<script src="{{ url_for('static', filename='scripts/graph.js') }}"></script>
+
+  <script type="text/javascript">
+    const link = "http://mvshmakov.pythonanywhere.com/search_ajax";
+    let emails = ["24@buyon.ru","4u@e.ulmart.ru","Foroffice.ru@foroffice.ru","Mothercare@retailrocket.net","No-reply@ulmart.ru","ORDERS@mvideo.ru","Tbsinfo@moneks.ru","Thebodyshop@retailrocket.net","adidas@account.adidas.com","adidas@adidas-news.adidas.com","agent@corp.mail.ru","auto@utkonos.ru","autoreply@pudra.ru","book@chitai-gorod.ru","chizhkova.ev@inettorg.ru","client@pudra.ru","contact@yves-rocher.ru","crm@rendez-vous.ru","customer@sndr.babadu.ru","delivery@av.ru","dochkisinochki.ru@flocktory.com","dochkisinochki@retailrocket.net","e-shop@hoff.ru","e96@e.e96.ru","eldorado@club.eldorado.ru","eldorado@e.eldorado.ru","email@ecmail.thebodyshop.ru","eshop@sela.ru","euroset.ru@flocktory.com","feedback@220-volt.ru","fill-order@top-brands.ru","hackathon_data1@mail.ru","hello@sndr.babadu.ru","info@audiomania.ru","info@bonprix.ru","info@chipdip.ru","info@dochkisinochki.ru","info@e.dochkisinochki.ru","info@e.otto.ru","info@e1.quelle.ru","info@e2.quelle.ru","info@email.letoile.ru","info@email1.detmir.ru","info@esky.ru","info@fotosklad.ru","info@info.mediamarkt.ru","info@info.pult.ru","info@just.ru","info@laredoute.ru","info@letu.ru","info@ru.mailstudiomoderna.com","info@send.mamsy.ru","info@sender.mvideo.ru","info@sportmaster.ru","info@store.sony.ru","info@svyaznoy.ru","info@t.otto.ru","info@techport.ru","info@wildberries.ru","info_zakaz@vstroykasolo.ru","inform@list.komus.ru","internetboutique@bosco.ru","key@key.ru","key@retailrocket.net","letter@bookvoed.ru","letu.ru@flocktory.com","mail@email.hoff.ru","mail@notification.lamoda.ru","mail@notik.ru","mail@vseinstrumenti.ru","mailer@email.pult.ru","mailer@ozon.ru","marketing@fotosklad.ru","mvideo@sender.mvideo.ru","new-order@top-brands.ru","news@220-volt.ru","news@email.shoppinglive.ru","news@laredoute.ru","news@list.komus.ru","news@petshop.ru","news@stolplit.ru","newsletter@holodilnik.ru","newsletter@info.lamoda.ru","newsletter@news.mytoys.ru","no-reply.dns@email.dns-shop.ru","no-reply@akusherstvo.ru","no-reply@isoluxgroup.ru","no-reply@re-store.ru","no-reply@xcom-shop.ru","no_reply@citilink.ru","no_reply@em.kupivip.ru","noreply@apteka.ru","noreply@e.kupivip.ru","noreply@eldorado.ru","noreply@em.kupivip.ru","noreply@ozon.ru","noreply@petrovich.ru","noreply@pleer.ru","noreply@post.technopark.ru","noreply@re-store.ru","noreply@rendez-vous.ru","noreply@santehnika-online.ru","noreply@vsemayki.ru","noreply@webim.ru","notify@noreply.e96.ru","ogo@ogo1.ru","oldi@from.oldi.ru","oldi@oldi.ru","order@holodilnik.ru","order@info.mediamarkt.ru","order@onlinetrade.ru","orders@mvideo.ru","otto.ru@flocktory.com","promo@tehnostudio.ru","pult@retailrocket.net","reebok@reebok-news.reebok.com","rendez-vous.ru@flocktory.com","robot@my-shop.ru","s.kuznetsov@xcom.ru","sale@laptop.ru","sale@triya.ru","sales@regard.ru","secret@news.003.ru","service@account.reebok.com","service@email.shoppinglive.ru","service@mytoys.ru","shop.ru@puma.com","shop@bookvoed.ru","shop@detmir.ru","shop@email-ru.puma.com","shop@euroset.ru","shop@foroffice.ru","shop@key.ru","shop@labirint-shop.ru","shop@labirintmail.ru","shop@perekrestok.ru","shop@top-shop.ru","shop@usedesk.detmir.ru","smartmailhack@corp.mail.ru","smm@mebelion.ru","stolplit@e.stolplit.ru","subs@svyaznoy.ru","support@accounts.dns-shop.ru","support@mamsy.ru","support@thebodyshop.ru","svyaznoy.ru@flocktory.com","team@isolux.ru","technopark@retailrocket.net","techport.ru@flocktory.com","user@info.mediamarkt.ru","user@news.003.ru","v.kolyakin@xcom.ru","viktor.tregubov@chipdip.ru","welcome@corp.mail.ru","your_order@mothercare.ru","your_order@thebodyshop.ru","zakaz@220-volt.ru","zakaz@euroset.ru","zakaz@otto.ru","zakaz@tehnostudio.ru"];
+    function makeRequest(text) {
+      return new Promise((resolve, reject) => {
+    function reqListener() {
+const answer = this.responseText;
+resolve(answer);
+}
+const oReq = new XMLHttpRequest();
+oReq.addEventListener("load", reqListener);
+oReq.open("GET", link);
+oReq.send();
+});
+}
+makeRequest().then((data) => {
+  emails = Object.keys(JSON.parse(data));
+  console.log(emails.join('","'))
+})
+  </script>
+
+<script>
+  $('#autocomplete').autocomplete({
+  lookup: emails
+});
+</script>
+{% endblock content %}
+{% block footer %}
+<footer class="container page-footer">
+    <div class="row justify-content-center" style="margin-top: 10px; margin-bottom: 10px;">
+        <small class="text-muted">Geek-S © 2018</small>
+    </div>
+</footer>
+{% endblock footer %}

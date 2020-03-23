@@ -1,0 +1,15 @@
+<header class="nc-page-header">
+  <nav class="nc-page-header__menu">
+    <span class="nc-page-header__item">
+      <a href="#" class="nc-link"><b>{{logo}}</b></a>
+    </span>
+    <span *ngFor="let item of menu" class="nc-page-header__item">
+      <a href="#" class="nc-link">{{item}}</a>
+  </span>
+  </nav>
+  <div class="nc-page-header__registration">
+    <span *ngFor="let item of account" class="nc-page-header__item">
+      <a href="#" class="nc-link">{{item}}</a>
+    </span>
+  </div>
+</header>

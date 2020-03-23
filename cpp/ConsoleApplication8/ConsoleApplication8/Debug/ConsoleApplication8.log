@@ -1,0 +1,5 @@
+﻿  ConsoleApplication8.cpp
+ConsoleApplication8.cpp(16): warning C4305: инициализация: усечение из "int" к "bool"
+  AssemblyInfo.obj : /DEBUG:FASTLINK не поддерживается, если присутствует управляемый код; выполняется перезапуск компоновки с /DEBUG:FULL
+  ConsoleApplication8.vcxproj -> C:\Users\Макс\Documents\Visual Studio 2015\Projects\ConsoleApplication8\Debug\ConsoleApplication8.exe
+  ConsoleApplication8.vcxproj -> C:\Users\Макс\Documents\Visual Studio 2015\Projects\ConsoleApplication8\Debug\ConsoleApplication8.pdb (Partial PDB)

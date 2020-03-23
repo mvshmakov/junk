@@ -1,0 +1,42 @@
+@import "../../styles/css/nc-link.css";
+
+.nc-widget-block {
+  min-width: 130px;
+  margin: 0 3% auto 0;
+}
+
+.nc-widget-block__header {
+   padding-bottom: 3px;
+ }
+
+.nc-widgets__container {
+  display: flex;
+}
+
+.nc-widget-block__image_weather {
+   width: 40px;
+   height: 40px;
+ }
+
+.nc-widget-block__image_horoscope {
+   width: 37px;
+   height: 26px;
+ }
+
+.nc-widget-block__content {
+  display: flex;
+  padding-bottom: 3px;
+}
+
+.nc-widget-block__content_currency {
+   display: block;
+   border-bottom: 1px solid #d0d0d0;
+ }
+
+.nc-widget-block__footer {
+   padding-top: 3px;
+ }
+
+.nc-widget-block__text_break {
+   display: block;
+ }

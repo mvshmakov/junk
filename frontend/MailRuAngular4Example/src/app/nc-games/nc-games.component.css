@@ -1,0 +1,21 @@
+@import "../../styles/css/nc-link.css";
+
+.nc-games {
+  padding: 10px 0 0 25px;
+}
+
+.nc-games__container {
+   display: flex;
+ }
+
+.nc-games__item {
+   padding: 0 8px 0 0;
+ }
+
+.nc-games__related {
+   padding: 8px 0 0 0;
+ }
+
+.nc-games__text_break {
+   display: block;
+ }

@@ -1,0 +1,29 @@
+.widget__content {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin: 0 auto auto 0;
+}
+
+.widget__item {
+  padding: 0 15px 5px 0;
+}
+
+.widget__link {
+  color: #000;
+  text-decoration: none;
+}
+
+.widget__link:hover {
+  color: red;
+}
+
+.widget__link_header {
+  color: #0054b9;
+  font-size: large;
+  text-decoration: none;
+}
+
+.widget__link_header:hover {
+  color: red;
+}

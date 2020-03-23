@@ -1,0 +1,24 @@
+@import "../../styles/css/nc-link.css";
+
+.nc-search {
+  flex: 0.83;
+}
+
+.nc-search__form {
+   display: flex;
+   align-items: center;
+ }
+
+.nc-search__input {
+   flex: 5;
+   margin: 4px 0 0 0;
+   padding: 3px 10px;
+   line-height: 23px;
+
+   border: 1px solid #a1a1a1;
+   border-radius: 2px;
+ }
+
+.nc-search__menu-item {
+   padding-right: 14px;
+ }

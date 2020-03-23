@@ -1,0 +1,72 @@
+.nc-form {
+    margin: 12px 0 3px;
+
+    border: 1px solid @color_main-border;
+    border-radius: 2px;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        height: 22px;
+        margin: 6px 0 4px 8px;
+
+        &-text {
+            font-size: large;
+            line-height: 22px;
+        }
+
+        &-mail {
+            display: flex;
+            align-items: center;
+        }
+
+        &-other {
+            display: flex;
+            align-items: center;
+            margin: 0 0 0 auto;
+        }
+    }
+
+    &__main {
+        display: flex;
+        flex-direction: column;
+
+        &-login {
+            display: flex;
+            padding: 0 3% 3% 3%;
+        }
+
+        &-password {
+            display: flex;
+            padding: 0 3% 0 3%;
+        }
+
+        &-recover {
+            display: flex;
+            padding: 2% 3% 2% 3%;
+        }
+
+        &-remember {
+            display: flex;
+            margin: 0 0 0 auto;
+        }
+    }
+
+    &__input {
+        flex: 1;
+        line-height: 17px;
+    }
+
+    &__footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        background: @color_form-background-footer;
+        border-top: 1px solid @color_main-border;
+
+        &-link-mobile {
+            margin-top: -5px;
+        }
+    }
+}

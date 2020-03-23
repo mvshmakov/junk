@@ -1,0 +1,43 @@
+
+  {
+   "name": "Maxim Shmakov",
+   "type": "Root",
+   "email": "mvshmakov@mail.ru",
+   "children": [
+    {
+     "name": "Sport",
+     "type": "Category",
+     "email": "mvshmakov@mail.ru"
+    },
+    {
+     "name": "Hobbies",
+     "type": "Category",
+     "email": "mvshmakov@mail.ru"
+    },
+    {
+     "name": "Work",
+     "type": "Category",
+     "email": "mvshmakov@mail.ru"
+    },
+    {
+     "name": "Women",
+     "type": "Category",
+     "email": "mvshmakov@mail.ru"
+    },
+    {
+     "name": "Existential crisis",
+     "type": "Category",
+     "email": "mvshmakov@mail.ru"
+    },
+    {
+     "name": "Relationships",
+     "type": "Category",
+     "email": "mvshmakov@mail.ru"
+    },
+    {
+     "name": "Books",
+     "type": "Category",
+     "email": "mvshmakov@mail.ru"
+    }
+   ]
+  }

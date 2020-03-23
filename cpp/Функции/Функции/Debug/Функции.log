@@ -1,0 +1,10 @@
+﻿  Функции.cpp
+Функции.cpp(29): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\conio.h(452): note:  см. объявление "getch"
+Функции.cpp(15): warning C4101: k: неиспользованная локальная переменная
+Функции.cpp(15): warning C4101: b: неиспользованная локальная переменная
+Функции.cpp(34): warning C4101: i: неиспользованная локальная переменная
+c:\users\макс\documents\visual studio 2015\projects\функции\функции\функции.cpp(56): warning C4715: noOfElement: значение возвращается не при всех путях выполнения
+  AssemblyInfo.obj : /DEBUG:FASTLINK не поддерживается, если присутствует управляемый код; выполняется перезапуск компоновки с /DEBUG:FULL
+  Функции.vcxproj -> C:\Users\Макс\Documents\Visual Studio 2015\Projects\Функции\Debug\Функции.exe
+  Функции.vcxproj -> C:\Users\Макс\Documents\Visual Studio 2015\Projects\Функции\Debug\Функции.pdb (Partial PDB)

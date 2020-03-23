@@ -1,0 +1,6 @@
+﻿  ConsoleApplication2.cpp
+ConsoleApplication2.cpp(31): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\conio.h(452): note:  см. объявление "getch"
+  AssemblyInfo.obj : /DEBUG:FASTLINK не поддерживается, если присутствует управляемый код; выполняется перезапуск компоновки с /DEBUG:FULL
+  ConsoleApplication2.vcxproj -> C:\Users\Макс\Documents\Visual Studio 2015\Projects\Двумерный массив\Debug\ConsoleApplication2.exe
+  ConsoleApplication2.vcxproj -> C:\Users\Макс\Documents\Visual Studio 2015\Projects\Двумерный массив\Debug\ConsoleApplication2.pdb (Partial PDB)

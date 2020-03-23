@@ -1,0 +1,24 @@
+.footer__wrapper {
+  display: flex;
+  width: 900px;
+  height: 132px;
+  padding: 25px 0 0 65px;
+}
+
+.footer__block {
+  padding: 0 2em 2em 0;
+  margin-left: 0;
+}
+
+.footer__item {
+  list-style-type: none;
+}
+
+.footer__link {
+  color: gray;
+  text-decoration: none;
+}
+
+.footer__link:hover {
+  color: red;
+}

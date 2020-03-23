@@ -1,0 +1,7 @@
+﻿  vectMult.cpp
+vectMult.cpp(23): warning C4305: инициализация: усечение из "double" к "float"
+vectMult.cpp(31): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+vectMult.cpp(32): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+  AssemblyInfo.obj : /DEBUG:FASTLINK не поддерживается, если присутствует управляемый код; выполняется перезапуск компоновки с /DEBUG:FULL
+  vectMult.vcxproj -> C:\Users\Макс\documents\visual studio 2015\Projects\vectMult\Debug\vectMult.exe
+  vectMult.vcxproj -> C:\Users\Макс\documents\visual studio 2015\Projects\vectMult\Debug\vectMult.pdb (Partial PDB)

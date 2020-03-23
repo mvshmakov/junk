@@ -1,0 +1,21 @@
+<div class="search-wrapper">
+  <img src="{{link}}" alt="logo" class="search__form-image">
+
+  <div class="search__form-wrapper">
+    <span *ngFor="let item of menu" class="search__menu-item">
+      <a href="#" class="search__link">{{item}}</a>
+    </span>
+
+    <div class="search__form">
+      <span class="search__form-search-wrapper">
+        <input title="search" type="text" class="search__form-input"/>
+        <button class="search__form-button">
+          {{searchButton}}
+        </button>
+      </span>
+    </div>
+
+    <span class="search__footer-info">{{additional.info}}</span>
+    <span><a href="#" class="search__link_footer">{{additional.link}}</a></span>
+  </div>
+</div>

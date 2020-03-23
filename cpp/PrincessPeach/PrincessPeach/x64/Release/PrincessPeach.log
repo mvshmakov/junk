@@ -1,0 +1,8 @@
+﻿  enemy.cpp
+c:\users\maxim\onedrive\projects\princesspeach\princesspeach\enemy.h(3): fatal error C1083: Не удается открыть файл включение: SFML/Graphics.hpp: No such file or directory
+  levels.cpp
+c:\users\maxim\onedrive\projects\princesspeach\princesspeach\levels.h(3): fatal error C1083: Не удается открыть файл включение: SFML/Graphics.hpp: No such file or directory
+  main.cpp
+main.cpp(1): fatal error C1083: Не удается открыть файл включение: SFML/Graphics.hpp: No such file or directory
+  player.cpp
+c:\users\maxim\onedrive\projects\princesspeach\princesspeach\enemy.h(3): fatal error C1083: Не удается открыть файл включение: SFML/Graphics.hpp: No such file or directory

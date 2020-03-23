@@ -1,0 +1,25 @@
+@import "../../styles/css/nc-link.css";
+
+nc-page-header {
+  display: flex;
+  align-items: center;
+  min-height: 29px;
+
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.nc-page-header__menu {
+  display: flex;
+  margin-left: 14px;
+}
+
+.nc-page-header__registration {
+  display: flex;
+  margin: 0 6px 0 auto;
+}
+
+.nc-page-header__item {
+  padding: 6px;
+  margin-right: 6px;
+  font-size: 14px;
+}

@@ -1,0 +1,9 @@
+﻿  ConsoleApplication10.cpp
+ConsoleApplication10.cpp(3): warning C4005: __CLR_VER: изменение макроопределения
+  ConsoleApplication10.cpp(3): note: аргументы командной строки:  см. предыдущее определение "__CLR_VER"
+ConsoleApplication10.cpp(3): warning C4651: параметр "/D__CLR_VER=40601055" указан для предкомпилированного заголовка, но не для текущей компиляции
+ConsoleApplication10.cpp(25): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\conio.h(452): note:  см. объявление "getch"
+  AssemblyInfo.obj : /DEBUG:FASTLINK не поддерживается, если присутствует управляемый код; выполняется перезапуск компоновки с /DEBUG:FULL
+  ConsoleApplication10.vcxproj -> C:\Users\Макс\Documents\Visual Studio 2015\Projects\ConsoleApplication10\Debug\ConsoleApplication10.exe
+  ConsoleApplication10.vcxproj -> C:\Users\Макс\Documents\Visual Studio 2015\Projects\ConsoleApplication10\Debug\ConsoleApplication10.pdb (Partial PDB)

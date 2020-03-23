@@ -1,0 +1,5 @@
+﻿  ConsoleApplication11.cpp
+c:\users\макс\documents\visual studio 2015\projects\consoleapplication11\consoleapplication11\consoleapplication11.cpp(23): warning C4715: Dot::getAxis: значение возвращается не при всех путях выполнения
+  AssemblyInfo.obj : /DEBUG:FASTLINK не поддерживается, если присутствует управляемый код; выполняется перезапуск компоновки с /DEBUG:FULL
+  ConsoleApplication11.vcxproj -> C:\Users\Макс\Documents\Visual Studio 2015\Projects\ConsoleApplication11\Debug\ConsoleApplication11.exe
+  ConsoleApplication11.vcxproj -> C:\Users\Макс\Documents\Visual Studio 2015\Projects\ConsoleApplication11\Debug\ConsoleApplication11.pdb (Partial PDB)
