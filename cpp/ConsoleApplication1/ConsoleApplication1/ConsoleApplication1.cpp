@@ -1,4 +1,4 @@
-// ConsoleApplication1.cpp: главный файл проекта.
+// РњР°СЃСЃРёРІС‹.cpp: РіР»Р°РІРЅС‹Р№ С„Р°Р№Р» РїСЂРѕРµРєС‚Р°.
 
 #include "stdafx.h"
 #include <iostream>

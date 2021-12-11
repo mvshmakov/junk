@@ -1,4 +1,4 @@
-// Расчет формулы.cpp: главный файл проекта.
+// Р Р°СЃС‡РµС‚ С„РѕСЂРјСѓР»С‹.cpp: РіР»Р°РІРЅС‹Р№ С„Р°Р№Р» РїСЂРѕРµРєС‚Р°.
 
 #include "stdafx.h"
 #include "stdio.h"
@@ -20,7 +20,7 @@ int main()
 		if (k == 0 || k == 1) f = 1;
 		else for (i = 1; i < k + 1; i++) f *= i;
 		cout << "Factorial =  " << f << endl;
-		s = (pow(-1.0, k)) * ((pow(1, k)) / (f * (k - n)));
+		s = (pow(-1, k)) * ((pow(1, k)) / (f * (k - n)));
 		cout << "Summa = " << s << endl;
 		f = 1; i = 1;
 		getch();

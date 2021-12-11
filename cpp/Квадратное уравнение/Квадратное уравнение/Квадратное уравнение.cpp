@@ -1,4 +1,4 @@
-// Квадратное уравнение.cpp: главный файл проекта.
+// РљРІР°РґСЂР°С‚РЅРѕРµ СѓСЂР°РІРЅРµРЅРёРµ.cpp: РіР»Р°РІРЅС‹Р№ С„Р°Р№Р» РїСЂРѕРµРєС‚Р°.
 
 #include "stdafx.h"
 #include "stdio.h"
@@ -21,8 +21,9 @@ int main()
 		}
 		else
 		{
-			x1 = - (c / b);
-			printf("discriminant ne opredelen\nkorni: x1=x2=%5.2f", x1);
+			x1 = -c / b;
+			if (x1 != 0) printf("discriminant ne opredelen\nkorni: x1=x2=%5.2f", x1);
+			else printf("discriminant ne opredelen\nkorni: x1=x2=%5.2f", fabs(x1));
 		}
 	}
 	else
@@ -30,8 +31,9 @@ int main()
 		d = b*b - 4 * a*c;
 		if (d == 0)
 		{
-			x1 = - (b / (2 * a));
-			printf("discriminant: d=%5.2f\nkorni: x1=x2=%5.2f", d, x1);
+			x1 = -b / (2 * a);
+			if (x1!=0) printf("discriminant: d=%5.2f\nkorni: x1=x2=%5.2f", d, x1);
+			else printf("discriminant: d=%5.2f\nkorni: x1=x2=%5.2f", d, fabs(x1));
 		}
 		else
 		{

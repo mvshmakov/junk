@@ -1,4 +1,4 @@
-// Функции.cpp: главный файл проекта.
+// Р¤СѓРЅРєС†РёРё.cpp: РіР»Р°РІРЅС‹Р№ С„Р°Р№Р» РїСЂРѕРµРєС‚Р°.
 
 #include "stdafx.h"
 #include <iostream>
@@ -8,7 +8,7 @@ using namespace std;
 
 int input(int a[], int m);
 void output(int a[], int k);
-int noOfElement(int a[], int k, float t);
+void noOfElement(int a[], int k, float t);
 
 void main()
 {
@@ -16,16 +16,18 @@ void main()
 	float t;
 	cout << "Vvedite 1 massiv: ";
 	n = input(a, 100);
-	//cout << "\nVvedite 2 massiv: ";
-	//k = input(b, 100);
-	//cout << "\n1 massiv: ";
-	//output(a, n);
-	//cout << "\n\n2 massiv: ";
-	//output(b, k);
+	cout << "\nVvedite 2 massiv: ";
+	k = input(b, 100);
+	cout << "\n1 massiv: ";
+	output(a, n);
+	cout << "\n\n2 massiv: ";
+	output(b, k);
 	cout << "\n\nVvedite chislo: ";
 	cin >> t;
-	cout << "\nNo of the position: " << noOfElement(a, n, t);
-	//cout << "\n\nNo of the position: " << noOfElement(b, k, t);
+	cout << "\nNo of the position: ";
+	noOfElement(a, n, t);
+	cout << "\n\nNo of the position: ";
+	noOfElement(b, k, t);
 	getch();
 }
 
@@ -38,7 +40,6 @@ int input(int a[], int m)
 		if (a[i] < 0) break;
 		k++;
 	}
-	output(a, k);
 	return k;
 }
 
@@ -47,10 +48,10 @@ void output(int a[], int k)
 	for (int i = 0; i < k; i++) cout << a[i] << " ";
 }
 
-int noOfElement(int a[], int k, float t)
+void noOfElement(int a[], int k, float t)
 {
 	int m = 0;
 	for (int i = 0; i < k; i++)
-		if (a[i] > t) { return i; break; } else m++;
-	if (m == k) return -1;
+		if (a[i] > t) { cout << i + 1; break; } else m++;
+		if (m == k) cout << "Net takogo elementa";
 }
